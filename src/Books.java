@@ -2,11 +2,13 @@ public class Books {
     private String book;
     private String author;
     private int ISBN;
+    private boolean isAvaliable;
 
-    public Books(String book,String author,int ISBN){
+    public Books(){
         this.author=author;
         this.book=book;
         this.ISBN=ISBN;
+        this.isAvaliable=isAvaliable;
     }
 
     public String getBook() {
@@ -19,7 +21,11 @@ public class Books {
         return ISBN;
     }
 
+    public boolean isAvaliable() {
+        return isAvaliable;
+    }
 
-
-
+    public void setAvaliable(boolean avaliable) {
+        isAvaliable = avaliable;
+    }
 }
